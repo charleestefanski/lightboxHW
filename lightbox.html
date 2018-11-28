@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="css/lightbox.css" rel="stylesheet">
+	
+	<title>Lightbox</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class = "controls">
+		<button type="button" class="control mixitup-control-active" data-filter="all">All</button>
+		<button type="button" class="control" data-filter=".nature">Nature</button>
+		<button type="button" class="control" data-filter=".concerts">Concerts</button>
+		<button type="button" class="control" data-filter=".museums">Museums</button>
+	</div>
+	<div class = "gallery container">
+		<a href="images/vancouver.jpg" data-lightbox="image" data-tile="Dad" class="mix nature"><img src="images/vancouver.jpg" data-alt = "my dad in Vancouver"></a>
+		<a href="images/concert.jpg" data-lightbox="image" data-tile="Concert" class="mix concerts"><img src="images/concert.jpg" data-alt="Concert photo"></a>
+		<a href="images/deyoung.jpg" data-lightbox="image" data-tile="deYoung Museum" class="mix museums"><img src="images/deyoung.jpg" data-alt = "Photo from deYoung Museum"></a>
+		<a href="images/vancouver2.jpg" data-lightbox="image" data-tile="Me" class="mix nature"><img src="images/vancouver2.jpg" data-alt="me in Vancouver"></a>
+		<a href="images/napa.jpg" data-lightbox="image" data-tile="Napa" class="mix nature"><img src="images/napa.jpg" data-alt="photo taken from hot air balloon in Napa"></a>
+		<a href="images/oslStage.jpg" data-lightbox="image" data-tile="Outside Lands" class="mix concerts"><img src="images/oslStage.jpg" data-alt="Outside Lands Music Festival mainstage"></a>
+		<a href="images/sunset.jpg" data-lightbox="image" data-tile="Sophia" class="mix nature"><img src="images/sunset.jpg" data-alt="my friend Sophia in front of the sunset"></a>
+		<a href="images/vail.jpg" data-lightbox="image" data-tile="Vail" class="mix nature"><img src="images/vail.jpg" data-alt="ski slope at Vail Mountain"></a>
+		<a href="images/whethan.jpg" data-lightbox="image" data-tile="Whethan Concert" class="mix concerts"><img src="images/whethan.jpg" data-alt="photo from a Whethan concert"></a>
+	</div>
+	<script src="js/lightbox.js"></script>
+	<script src="js/mixitup.js"></script>
+	<script>
+		var containerEL = document.querySelector('.container');
+		var mixer = mixitup(containerEL)
+	</script>
+</body>
+</html>
